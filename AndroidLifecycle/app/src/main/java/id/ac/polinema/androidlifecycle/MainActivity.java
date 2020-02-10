@@ -33,4 +33,28 @@ public class MainActivity extends AppCompatActivity {
 	// TODO: tambahkan callback onStop() di sini
 
 	// TODO: lengkapi callback untuk onRestart() onResume() onPause() onDestroy()
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Toast.makeText(  this,  "App on Restart", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(  this,  "App on Resume", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(  this,  "App on Pause", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(  this,  "App on Destroy", Toast.LENGTH_SHORT).show();
+    }
 }
